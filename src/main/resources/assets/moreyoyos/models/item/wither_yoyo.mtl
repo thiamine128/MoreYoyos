@@ -1,0 +1,6 @@
+# Made in Blockbench 4.3.1
+newmtl m_1
+map_Kd moreyoyos:item/wither_face
+newmtl m_2
+map_Kd moreyoyos:item/wither_back
+newmtl none

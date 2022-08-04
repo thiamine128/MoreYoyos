@@ -1,0 +1,6 @@
+# Made in Blockbench 4.3.1
+newmtl m_0
+map_Kd stripped_oak_log.png 
+newmtl m_1
+map_Kd oak_planks.png 
+newmtl none

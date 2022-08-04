@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "b": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "moreyoyos:netherite_yoyo",
+    "count": 1
+  }
+}

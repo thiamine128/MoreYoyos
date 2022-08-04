@@ -1,0 +1,11 @@
+{
+  "type": "moreyoyos:chest_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+  ],
+  "yoyo": "moreyoyos:iron_golem_yoyo",
+  "chance": 0.4
+}

@@ -1,0 +1,11 @@
+{
+  "type": "moreyoyos:chest_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+    }
+  ],
+  "yoyo": "moreyoyos:spider_yoyo",
+  "chance": 0.2
+}

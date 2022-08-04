@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "b": {
+      "tag": "minecraft:stone_craftinh"
+    }
+  },
+  "result": {
+    "item": "moreyoyos:wooden_yoyo",
+    "count": 1
+  }
+}

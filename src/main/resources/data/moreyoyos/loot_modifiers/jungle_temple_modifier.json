@@ -1,0 +1,11 @@
+{
+  "type": "moreyoyos:chest_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+  ],
+  "yoyo": "moreyoyos:bee_yoyo",
+  "chance": 0.5
+}

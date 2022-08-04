@@ -1,0 +1,11 @@
+{
+  "type": "moreyoyos:chest_loot_modifier",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/bastion_treasure"
+    }
+  ],
+  "yoyo": "moreyoyos:wither_yoyo",
+  "chance": 0.3
+}

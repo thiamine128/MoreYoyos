@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+license="All rights reserved"
+[[mods]]
+modId="moreyoyos"
+version="${file.jarVersion}"
+displayName="More Yoyos Mod"
+logoFile="examplemod.png"
+credits="Thanks for this example mod goes to Java"
+authors="Love, Cheese and small house plants"
+description='''
+Adds more yoyos to minecraft 1.19!
+'''
+[[dependencies.yoys]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.yoys]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.20)"
+    ordering="NONE"
+    side="BOTH"
