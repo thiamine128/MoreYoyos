@@ -1,12 +1,20 @@
 package cn.thiamine128.yoyos.world.item;
 
 import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class IronGolemYoyoItem extends FunctionalYoyoItem {
     public IronGolemYoyoItem(int maxDamage, double attackDamage, double stringLength, double speed, float knockback, int attackInterval) {
@@ -49,5 +57,11 @@ public class IronGolemYoyoItem extends FunctionalYoyoItem {
 
         double up = Math.max(0.0D, 1.0 - knockbackResistance);
         entity.setDeltaMovement(entity.getDeltaMovement().add(new Vec3(0d, 0.4d * up, 0d)));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
+        super.appendHoverText(itemStack, level, components, tooltipFlag);
+        components.add(Component.translatable("moreyoyos.tip6").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
     }
 }

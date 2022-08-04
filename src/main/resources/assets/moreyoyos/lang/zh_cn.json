@@ -1,5 +1,14 @@
 {
   "itemGroup.yoyos": "悠悠球",
+  "moreyoyos.string_length": "线长",
+  "moreyoyos.attack_interval": "伤害间隔",
+  "moreyoyos.speed": "速度",
+  "moreyoyos.tip1": "长按右键蓄力",
+  "moreyoyos.tip2": "对燃烧的敌人造成双倍伤害",
+  "moreyoyos.tip3": "黏黏的...",
+  "moreyoyos.tip4": "攻击时概率恢复生命",
+  "moreyoyos.tip5": "Boom!",
+  "moreyoyos.tip6": "很重...",
   "item.moreyoyos.wooden_yoyo": "木质悠悠球",
   "item.moreyoyos.stone_yoyo": "圆石悠悠球",
   "item.moreyoyos.iron_yoyo": "铁质悠悠球",
@@ -14,5 +23,8 @@
   "item.moreyoyos.iron_golem_yoyo": "铁傀儡悠悠球",
   "item.moreyoyos.ender_yoyo": "末影悠悠球",
   "item.moreyoyos.creeper_yoyo": "苦力怕悠悠球",
-  "enchantment.moreyoyos.spinning": "高速旋转"
+  "enchantment.moreyoyos.spinning": "高速旋转",
+  "enchantment.moreyoyos.sharpness": "锋利",
+  "enchantment.moreyoyos.smite": "亡灵杀手",
+  "enchantment.moreyoyos.bane_of_arthropods": "节肢杀手"
 }

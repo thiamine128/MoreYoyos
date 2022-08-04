@@ -73,12 +73,6 @@ public class SimpleYoyoItem extends AbstractYoyoItem{
         return super.finishUsingItem(p_41409_, level, user);
     }
 
-    @Override
-    public int getEnchantmentValue() {
-        return 14;
-    }
-
-
     public void onHitEntity(YoyoEntity yoyo, Entity entity) {
         DamageSource damageSource;
         double knockback = 1.0d;

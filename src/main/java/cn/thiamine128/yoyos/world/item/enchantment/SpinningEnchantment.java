@@ -14,7 +14,12 @@ public class SpinningEnchantment extends Enchantment {
 
     @Override
     public int getMinCost(int level) {
-        return 10 * level;
+        return 1 + (level - 1) * 11;
+    }
+
+    @Override
+    public int getMaxCost(int level) {
+        return this.getMinCost(level) + 20;
     }
 
     @Override

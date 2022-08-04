@@ -3,6 +3,8 @@ package cn.thiamine128.yoyos.world.item;
 import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
@@ -11,8 +13,12 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.UUID;
 
 public abstract class AbstractYoyoItem extends Item {
@@ -74,5 +80,18 @@ public abstract class AbstractYoyoItem extends Item {
 
     public int getAttackInterval() {
         return this.attackInterval;
+    }
+
+    @Override
+    public int getEnchantmentValue() {
+        return 14;
+    }
+
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+        super.appendHoverText(itemStack, level, components, flag);
+        components.add(Component.translatable("moreyoyos.string_length").append(Component.literal(":" + this.stringLength)).withStyle(ChatFormatting.DARK_GREEN));
+        components.add(Component.translatable("moreyoyos.attack_interval").append(Component.literal(":" + this.attackInterval)).withStyle(ChatFormatting.DARK_GREEN));
+        components.add(Component.translatable("moreyoyos.speed").append(Component.literal(":" + this.speed)).withStyle(ChatFormatting.DARK_GREEN));
     }
 }
