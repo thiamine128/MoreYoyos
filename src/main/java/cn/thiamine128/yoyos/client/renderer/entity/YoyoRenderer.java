@@ -44,6 +44,7 @@ public class YoyoRenderer extends EntityRenderer<YoyoEntity> {
         Entity owner = yoyo.getOwner();
         if (owner instanceof Player) {
             Player player = (Player) owner;
+
             float f = player.getAttackAnim(tickDelta);
             float f1 = Mth.sin(Mth.sqrt(f) * (float)Math.PI);
             float f2 = Mth.lerp(tickDelta, player.yBodyRotO, player.yBodyRot) * ((float)Math.PI / 180F);

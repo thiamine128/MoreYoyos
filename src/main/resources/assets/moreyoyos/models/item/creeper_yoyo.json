@@ -2,6 +2,9 @@
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/creeper_yoyo.obj",
   "flip_v": true,
+  "textures": {
+    "particle": "moreyoyos:item/creeper2"
+  },
   "display": {
     "thirdperson_righthand": {
       "rotation": [-45, 0, 0],

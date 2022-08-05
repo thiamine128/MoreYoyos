@@ -5,9 +5,9 @@ license="All rights reserved"
 modId="moreyoyos"
 version="${file.jarVersion}"
 displayName="More Yoyos Mod"
-logoFile="examplemod.png"
+logoFile="moreyoyos.png"
 credits="Thanks for this example mod goes to Java"
-authors="Love, Cheese and small house plants"
+authors="thiamine128"
 description='''
 Adds more yoyos to minecraft 1.19!
 '''

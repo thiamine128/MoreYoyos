@@ -2,10 +2,13 @@
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/stone_yoyo.obj",
   "flip_v": true,
+  "textures": {
+    "particle": "minecraft:block/smooth_stone"
+  },
   "overrides": [
     {
       "predicate": {
-        "yoyos:using": 1
+        "moreyoyos:using": 1
       },
       "model": "item/generated"
     }

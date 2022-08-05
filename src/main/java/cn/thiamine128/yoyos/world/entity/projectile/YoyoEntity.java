@@ -163,7 +163,7 @@ public class YoyoEntity extends Projectile {
                 this.onHitEntity(new EntityHitResult(entity));
             }
 
-            if (flag && hitting.position().distanceTo(this.position()) < 0.3d) {
+            if (flag && this.targetPos.distanceTo(this.position()) < 0.3d) {
                 this.onHitEntity(new EntityHitResult(hitting));
             }
 

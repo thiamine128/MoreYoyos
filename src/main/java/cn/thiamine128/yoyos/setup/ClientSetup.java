@@ -16,6 +16,7 @@ public class ClientSetup {
     @SubscribeEvent
     public static void setupClient(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
+
             ItemProperties.register(YoyosItems.WOODEN_YOYO.get(), MoreYoyos.loc("using"), (itemStack, clientLevel, player, i) -> {
                 return player != null && player.isUsingItem() && player.getUseItem() == itemStack ? 1.0f : 0.0f;
             });

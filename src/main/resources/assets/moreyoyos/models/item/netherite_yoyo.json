@@ -2,10 +2,13 @@
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/netherite_yoyo.obj",
   "flip_v": true,
+  "textures": {
+    "particle": "minecraft:block/netherite"
+  },
   "overrides": [
     {
       "predicate": {
-        "yoyos:using": 1
+        "moreyoyos:using": 1
       },
       "model": "item/generated"
     }

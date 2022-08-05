@@ -2,10 +2,13 @@
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/spider_yoyo.obj",
   "flip_v": true,
+  "textures": {
+    "particle": "moreyoyos:item/spider_back"
+  },
   "overrides": [
     {
       "predicate": {
-        "yoyos:using": 1
+        "moreyoyos:using": 1
       },
       "model": "item/generated"
     }
