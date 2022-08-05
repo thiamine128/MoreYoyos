@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:stone"
+      "tag": "minecraft:planks"
     },
     "b": {
-      "tag": "minecraft:stone_craftinh"
+      "tag": "minecraft:logs"
     }
   },
   "result": {

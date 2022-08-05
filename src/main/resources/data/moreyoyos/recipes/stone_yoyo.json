@@ -7,10 +7,10 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:stone"
+      "item": "minecraft:stone"
     },
     "b": {
-      "tag": "minecraft:stone_crafting_materials"
+      "tag": "minecraft:stone_tool_materials"
     }
   },
   "result": {
