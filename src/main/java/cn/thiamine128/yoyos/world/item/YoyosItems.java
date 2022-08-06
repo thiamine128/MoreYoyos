@@ -16,16 +16,12 @@ public class YoyosItems {
     public static final RegistryObject<Item> GOLDEN_YOYO = ITEMS.register("golden_yoyo", () -> new TieredYoyoItem(Tiers.GOLD, 0.0d, 4.5d, 0.8d, 8));
     public static final RegistryObject<Item> DIAMOND_YOYO = ITEMS.register("diamond_yoyo", () -> new TieredYoyoItem(Tiers.DIAMOND, 0.0d, 5.0d, 1.1d, 8));
     public static final RegistryObject<Item> NETHERITE_YOYO = ITEMS.register("netherite_yoyo", () -> new TieredYoyoItem(Tiers.NETHERITE, 0.0d, 6.0d, 1.2d, 8));
-    public static final RegistryObject<Item> BLAZE_YOYO = ITEMS.register("blaze_yoyo", () -> new BlazeYoyoItem(512, 3.0d, 5.0d, 0.8d, 0.2f, 8));
+    public static final RegistryObject<Item> BLAZE_YOYO = ITEMS.register("blaze_yoyo", () -> new BlazeYoyoItem(255, 3.0d, 5.0d, 0.8d, 0.2f, 8));
     public static final RegistryObject<Item> SLIME_YOYO = ITEMS.register("slime_yoyo", () -> new SlimeYoyoItem(512, 1.0d, 5.0d, 0.8d, 0.0f, 8));
-    public static final RegistryObject<Item> WITHER_YOYO = ITEMS.register("wither_yoyo", () -> new WitherYoyoItem(512, 3.0, 5.0d, 0.8d, 0.2f, 8));
+    public static final RegistryObject<Item> WITHER_YOYO = ITEMS.register("wither_yoyo", () -> new WitherYoyoItem(255, 3.0, 5.0d, 0.8d, 0.2f, 8));
     public static final RegistryObject<Item> BEE_YOYO = ITEMS.register("bee_yoyo", () -> new BeeYoyoItem(512, 1.0, 5.0d, 0.8d, 0.1f, 3));
     public static final RegistryObject<Item> SPIDER_YOYO = ITEMS.register("spider_yoyo", () -> new SpiderYoyoItem(512, 3.0, 12.0d, 1.2d, 0.1f, 8));
     public static final RegistryObject<Item> IRON_GOLEM_YOYO = ITEMS.register("iron_golem_yoyo", () -> new IronGolemYoyoItem(127, 2.0, 6.0d, 1.6d, 0.1f, 40));
     public static final RegistryObject<Item> ENDER_YOYO = ITEMS.register("ender_yoyo", () -> new EnderYoyoItem(512, 4.0, 8.0d, 64.0d, 0.1f, 8));
     public static final RegistryObject<Item> CREEPER_YOYO = ITEMS.register("creeper_yoyo", () -> new CreeperYoyoItem(127, 1.0, 6.0d, 1.6d, 0.1f, 40));
-
-    public static void registerLootTables() {
-
-    }
 }
