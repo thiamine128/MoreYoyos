@@ -4,7 +4,6 @@ import cn.thiamine128.yoyos.loot.YoyosGlobalLootModifiers;
 import cn.thiamine128.yoyos.world.item.YoyosItems;
 import cn.thiamine128.yoyos.world.entity.YoyosEntityType;
 import cn.thiamine128.yoyos.world.item.enchantment.YoyosEnchantments;
-import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
