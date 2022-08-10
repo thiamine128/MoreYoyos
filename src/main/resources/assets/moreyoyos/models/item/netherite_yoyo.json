@@ -1,7 +1,7 @@
 {
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/netherite_yoyo.obj",
-  "flip_v": true,
+  "flip-v": true,
   "textures": {
     "particle": "minecraft:block/netherite"
   },

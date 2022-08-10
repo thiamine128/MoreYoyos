@@ -13,7 +13,6 @@ import org.slf4j.Logger;
 @Mod(MoreYoyos.MODID)
 public class MoreYoyos {
     public static final String MODID = "moreyoyos";
-    public static final Logger LOGGER = LogUtils.getLogger();
 
     public MoreYoyos() {
         YoyosItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());

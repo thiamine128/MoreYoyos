@@ -1,7 +1,7 @@
 {
   "loader": "forge:obj",
   "model": "moreyoyos:models/item/golden_yoyo.obj",
-  "flip_v": true,
+  "flip-v": true,
   "textures": {
     "particle": "minecraft:block/gold_block"
   },
