@@ -9,9 +9,9 @@ logoFile="moreyoyos.png"
 credits="Thanks for this example mod goes to Java"
 authors="thiamine128"
 description='''
-Adds more yoyos to minecraft 1.19!
+Adds more yoyos to minecraft!
 '''
-[[dependencies.yoys]]
+[[dependencies.yoyos]]
     modId="forge"
     mandatory=true
     versionRange="[41,)"
