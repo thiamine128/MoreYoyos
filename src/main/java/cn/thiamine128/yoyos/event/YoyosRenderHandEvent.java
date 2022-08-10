@@ -19,11 +19,11 @@ public class YoyosRenderHandEvent {
         if (itemStack.getItem() instanceof AbstractYoyoItem) {
             event.getPoseStack().pushPose();
             Player player = Minecraft.getInstance().player;
-            ItemInHandRenderer itemInHandRenderer = Minecraft.getInstance().getEntityRenderDispatcher().getItemInHandRenderer();
-            float f4 = event.getHand() == InteractionHand.MAIN_HAND ? player.getAttackAnim(event.getPartialTick()) : 0.0F;
-            float f5 = 1.0F - Mth.lerp(event.getPartialTick(), itemInHandRenderer.oMainHandHeight, itemInHandRenderer.mainHandHeight);
+            ItemInHandRenderer itemInHandRenderer = Minecraft.getInstance().getItemInHandRenderer();
+            float f4 = event.getHand() == InteractionHand.MAIN_HAND ? player.getAttackAnim(event.getPartialTicks()) : 0.0F;
+            float f5 = 1.0F - Mth.lerp(event.getPartialTicks(), itemInHandRenderer.oMainHandHeight, itemInHandRenderer.mainHandHeight);
             HumanoidArm humanoidArm = (event.getHand() == InteractionHand.MAIN_HAND) ? player.getMainArm() : player.getMainArm().getOpposite();
-            Minecraft.getInstance().getEntityRenderDispatcher().getItemInHandRenderer().renderPlayerArm(event.getPoseStack(), event.getMultiBufferSource(), event.getPackedLight(), f5, f4, humanoidArm);
+            Minecraft.getInstance().getItemInHandRenderer().renderPlayerArm(event.getPoseStack(), event.getMultiBufferSource(), event.getPackedLight(), f5, f4, humanoidArm);
             event.getPoseStack().popPose();
         }
     }

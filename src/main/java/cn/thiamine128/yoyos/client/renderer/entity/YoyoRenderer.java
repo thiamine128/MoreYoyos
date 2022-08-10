@@ -59,7 +59,7 @@ public class YoyoRenderer extends EntityRenderer<YoyoEntity> {
             float eyeHeight;
 
             if ((this.entityRenderDispatcher.options == null || this.entityRenderDispatcher.options.getCameraType().isFirstPerson()) && player == Minecraft.getInstance().player) {
-                double d7 = 960.0D / (double)this.entityRenderDispatcher.options.fov().get().intValue();
+                double d7 = 960.0D / (double)this.entityRenderDispatcher.options.fov;
                 Vec3 vec3 = this.entityRenderDispatcher.camera.getNearPlane().getPointOnPlane(0.525F, -1.0F);
                 vec3 = vec3.scale(d7);
                 vec3 = vec3.yRot(f1 * 0.5F);

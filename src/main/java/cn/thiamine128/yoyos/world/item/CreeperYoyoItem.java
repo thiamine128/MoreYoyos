@@ -3,6 +3,7 @@ package cn.thiamine128.yoyos.world.item;
 import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
@@ -32,6 +33,6 @@ public class CreeperYoyoItem extends FunctionalYoyoItem {
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
-        components.add(Component.translatable("moreyoyos.tip5").withStyle(ChatFormatting.GREEN, ChatFormatting.ITALIC));
+        components.add(new TranslatableComponent("moreyoyos.tip5").withStyle(ChatFormatting.GREEN, ChatFormatting.ITALIC));
     }
 }

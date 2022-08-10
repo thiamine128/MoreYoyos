@@ -3,6 +3,7 @@ package cn.thiamine128.yoyos.world.item;
 import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -25,6 +26,6 @@ public class BlazeYoyoItem extends SimpleYoyoItem{
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
-        components.add(Component.translatable("moreyoyos.tip2").withStyle(ChatFormatting.YELLOW, ChatFormatting.ITALIC));
+        components.add(new TranslatableComponent("moreyoyos.tip2").withStyle(ChatFormatting.YELLOW, ChatFormatting.ITALIC));
     }
 }

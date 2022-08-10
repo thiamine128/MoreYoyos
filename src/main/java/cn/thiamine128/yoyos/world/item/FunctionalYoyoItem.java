@@ -5,6 +5,7 @@ import cn.thiamine128.yoyos.capability.YoyosCapabilities;
 import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
@@ -77,7 +78,7 @@ public class FunctionalYoyoItem extends AbstractYoyoItem {
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
-        components.add(Component.translatable("moreyoyos.tip1").withStyle(ChatFormatting.BLUE));
+        components.add(new TranslatableComponent("moreyoyos.tip1").withStyle(ChatFormatting.BLUE));
     }
 
     @Override

@@ -4,6 +4,7 @@ import cn.thiamine128.yoyos.world.entity.projectile.YoyoEntity;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
@@ -48,6 +49,6 @@ public class SlimeYoyoItem extends SimpleYoyoItem{
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
-        components.add(Component.translatable("moreyoyos.tip3").withStyle(ChatFormatting.GREEN, ChatFormatting.ITALIC));
+        components.add(new TranslatableComponent("moreyoyos.tip3").withStyle(ChatFormatting.GREEN, ChatFormatting.ITALIC));
     }
 }

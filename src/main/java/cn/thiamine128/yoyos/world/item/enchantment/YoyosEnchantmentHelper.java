@@ -23,13 +23,6 @@ public class YoyosEnchantmentHelper extends EnchantmentHelper {
 
     private static void runIterationOnItem(EnchantmentHelper.EnchantmentVisitor p_44851_, ItemStack p_44852_) {
         if (!p_44852_.isEmpty()) {
-            if (true) { // forge: redirect enchantment logic to allow non-NBT enchants
-                for (Map.Entry<Enchantment, Integer> entry : p_44852_.getAllEnchantments().entrySet()) {
-                    p_44851_.accept(entry.getKey(), entry.getValue());
-                }
-                return;
-            }
-
             ListTag listtag = p_44852_.getEnchantmentTags();
 
             for(int i = 0; i < listtag.size(); ++i) {
@@ -38,7 +31,6 @@ public class YoyosEnchantmentHelper extends EnchantmentHelper {
                     p_44851_.accept(p_182437_, getEnchantmentLevel(compoundtag));
                 });
             }
-
         }
     }
 }

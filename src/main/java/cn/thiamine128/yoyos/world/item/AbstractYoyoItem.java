@@ -5,6 +5,8 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Mob;
@@ -90,8 +92,8 @@ public abstract class AbstractYoyoItem extends Item {
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         super.appendHoverText(itemStack, level, components, flag);
-        components.add(Component.translatable("moreyoyos.string_length").append(Component.literal(":" + this.stringLength)).withStyle(ChatFormatting.DARK_GREEN));
-        components.add(Component.translatable("moreyoyos.attack_interval").append(Component.literal(":" + this.attackInterval)).withStyle(ChatFormatting.DARK_GREEN));
-        components.add(Component.translatable("moreyoyos.speed").append(Component.literal(":" + this.speed)).withStyle(ChatFormatting.DARK_GREEN));
+        components.add(new TranslatableComponent("moreyoyos.string_length").append(new TextComponent(":" + this.stringLength)).withStyle(ChatFormatting.DARK_GREEN));
+        components.add(new TranslatableComponent("moreyoyos.attack_interval").append(new TextComponent(":" + this.attackInterval)).withStyle(ChatFormatting.DARK_GREEN));
+        components.add(new TranslatableComponent("moreyoyos.speed").append(new TextComponent(":" + this.speed)).withStyle(ChatFormatting.DARK_GREEN));
     }
 }
