@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)"
+loaderVersion="[40,)"
 license="All rights reserved"
 [[mods]]
 modId="moreyoyos"
@@ -11,15 +11,15 @@ authors="thiamine128"
 description='''
 Adds more yoyos to minecraft 1.19!
 '''
-[[dependencies.yoys]]
+[[dependencies.yoyos]]
     modId="forge"
     mandatory=true
-    versionRange="[41,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.yoys]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.18,1.20)"
     ordering="NONE"
     side="BOTH"
