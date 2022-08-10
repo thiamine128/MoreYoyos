@@ -17,7 +17,7 @@ Adds more yoyos to minecraft!
     versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.yoys]]
+[[dependencies.yoyos]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.19,1.20)"
